@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println(isValidIP("172.255.254.1")) // true
+	fmt.Println(isValidIP("172.16.254.1")) // true
 
 	fmt.Println(isValidIP("172.316.254.1")) // false
 	fmt.Println(isValidIP("0.1.1.256"))     // false

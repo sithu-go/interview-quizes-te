@@ -9,6 +9,7 @@ func main() {
 	fmt.Println(getNumber("Var-----___1_int"))
 	fmt.Println(getNumber("Q2q-q"))
 	fmt.Println(getNumber("eef3243**s"))
+	fmt.Println(getNumber("hehe"))
 
 }
 
@@ -18,5 +19,5 @@ func getNumber(input string) string {
 			return string(v)
 		}
 	}
-	return ""
+	return "there's no number"
 }

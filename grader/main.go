@@ -8,6 +8,29 @@ func main() {
 	for _, score := range scores {
 		fmt.Println(gradeStudent(score))
 	}
+
+	// with nice format
+	scoresV2 := map[string]int{
+		"A": 90,
+		"B": 48,
+		"C": 63,
+		"D": 75,
+		"E": 70,
+	}
+
+	var names []string
+	for name := range scoresV2 {
+		names = append(names, name)
+	}
+	fmt.Println(names)
+
+	for k, name := range names {
+		if k == 0 {
+			fmt.Println("Team, Grade")
+		}
+		fmt.Printf("%s, %s\n", name, gradeStudent(scoresV2[name]))
+
+	}
 }
 
 func gradeStudent(score int) string {
